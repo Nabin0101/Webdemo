@@ -5,35 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdution to Bootstrap</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap.css">
-</head>
-<body>
-    <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <h3>Nabin</h3>
-            <p>Hi I am Nabin</p>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  </head>
+<body class="bg-light">
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-lg-4 bg-dark text-white  py-4">
+          <div class="header-left">
+            <img src="/cat.webp" alt="" class="img-thumbnail rounded-circle mb-2">
+            <h1 class="display-5 text-center" >Nabin Dahal</h1>
+            <h4 class="lead text-upppercase text-white-50 mb-4 text-center">Student At NIST</h4>
           </div>
-          <div class="col-sm-4">
-            <h3>Nabina</h3>
-            <p>Hi I am Nabina</p>
+
+          <div>
+            <h4 class="text-uppercase bg-white text-dark py-2 rounded-pill text-center ">Contact</h4>
+
+            <ul class="list-unstyle text-white-50 ml-5 py-2 text-left">
+              <li class="list-item">
+                <i class="fas fa-mobile-alt mx-4"></i>
+                +977 984 360 472
+              </li>
+              <li class="list-item">
+                <i class="fas fa-envelope-open-text mx-4"></i>
+                naveendl731@gmail.com
+              </li>
+              <li class="list-item">
+                <i class="fas fa-blog mx-4"></i>
+                www.stackoverflow.com
+              </li>
+              <li class="list-item">
+                <i class="fas fa-map-marker-alt mx-4"></i>
+                Banepa-3,Nala
+              </li>
+            </ul>
           </div>
-          <div class="col-sm-4">
-            <h3>Dahal Family</h3>
-            <p>Welcome to family.</p>
+
+          <div>
+            <h4 class="text-uppercase bg-white text-dark py-2 rounded-pill text-center ">Skills</h4>
+            <ul class="list text-white-50 ml-5 py-2 text-left text-capitalize">
+              <li class="list-item">Frontend(HTML,CSS,JS)</li>
+              <li class="list-item">DatabaseManager</li>
+              <li class="list-item">Designer</li>
+            </ul>
           </div>
+
+          <div>
+            <h4 class="text-uppercase bg-white text-dark py-2 rounded-pill text-center ">Education</h4>
+            <ul class="list text-white-50 ml-5 py-2 text-left text-capitalize">
+              <li class="list-item">Gyankunj Saishik Pratisthan</li>
+              <li class="list-item">BanepaNist</li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-lg-8 bg-light text py-4 px-5"></div>
+          <div class="header-right">
+            <h4 class="text-uppercase">Profile</h4>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla corporis vero, beatae qui est non! Ullam quam facilis itaque numquam doloremque delectus velit, corrupti distinctio excepturi non ea vel.</p>
+        </div>
+
+        <div>
+          <h4 class="text-uppercase">WorkExperience</h4>
+          <hr>
+          <ul class="list">
+            <li class="list-item">
+              <h5 class="display-6 text-uppercase">OnlineJobNepal</h5>
+              <h6 class="text-uppercase text-black-50">Company Name/ 2021-present</h6>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla quisquam iure amet laboriosam est aperiam voluptas, aliquid sit quasi et.</p>
+            </li>
+            <li class="list-item">
+              <h5 class="display-6 text-uppercase">BanepaNist</h5>
+              <h6 class="text-uppercase text-black-50">Company Name/ 2019-present</h6>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla quisquam iure amet laboriosam est aperiam voluptas, aliquid sit quasi et.</p>
+            </li>
+            <li class="list-item">
+              <h5 class="display-6 text-uppercase">OwnHouse</h5>
+              <h6 class="text-uppercase text-black-50">DahalFamily/ From 10 years to death</h6>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla quisquam iure amet laboriosam est aperiam voluptas, aliquid sit quasi et.</p>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-        <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-          <li><a href="#">HTML</a></li>
-          <li><a href="#">CSS</a></li>
-          <li><a href="#">JavaScript</a></li>
-        </ul>
-      </div>
+    </div>
 </body>
 </html>
