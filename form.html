@@ -1,0 +1,56 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <script>
+        function validateform()
+        {
+            var name= document.myForm.name.value;
+            var phone= document.myForm.phone.value;
+            var email= document.myForm.email.value;
+            var password= document.myForm.password.value;
+            var regexp=/\S+@\S+\.\S+/;
+            if(name==null || name=="")
+            {
+                alert("Name cannot be blank");
+                return false;
+            }
+            else if(phone==null ||  phone=="")
+            {
+                alert("Phone No cannot be blank");
+            }
+            else if(isNaN(phone))
+            {
+                alert("enter numeric value only");
+            }
+            else if(email==null || email=="")
+            {
+                alert("Email id cannot be blank");
+            }
+            else if(regexp.test(String(email).toLowerCase())==false)
+            {
+                alert("Enter valid email id: username@gmail.com");
+            }
+            else if(password.length<8)
+            {
+                alert("Length should be of size 8 or more than 8");
+            }
+        }
+    </script>
+
+    <table name="table">
+        <form name="myForm" method="post" onsubmit="return(validateform());">
+            Name: <input type="text" name="name" ><br>
+            PhoneNo: <input type="text" name="phone" ><br>
+            Email: <input type="text" name="email" ><br>
+            Password: <input type="text" name="password" ><br>
+            <input type="submit" value="Register">
+        </form>
+    </table>
+</body>
+</html>
