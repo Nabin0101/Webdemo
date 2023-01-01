@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            function showHint(str) {
+                if(str.length==0){
+                    document.getElementById("txtHint").innerHTML="";
+                    return;
+                }else {
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.onreadystatechange()=function() {
+                        if(this.readystate==4 && this.status==200) {
+                            document.getElementById("txtHint").innerHTML=this.responseText;
+                        }
+                    };
+                    xmlhttp.open("GET","gethint.php?q="+str, true);
+                    xmlhttp.send();
+                }
+            }
+        </script>
+        <body>
+            <p>Start Typing a name</p>
+            <form >
+                First Name:<input type="text" onkeyup="showHint(this.value)">
+            </form>
+            <p>Suggestions: <span id="textHint"></span></p>
+        </body>
+    </head>
+</html>
